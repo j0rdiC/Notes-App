@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-knal5fu_w97o505#7z3y76bp*v%3z8+qmars_$d7r&mjlxx@ye
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'web-production-1550.up.railway.app']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -62,7 +62,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'web-production-1550.up.railway.app/public')
+            os.path.join(BASE_DIR, 'static')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -124,9 +124,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'public/'
-STATIC_ROOT = os.path.join(
-    BASE_DIR, 'public')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+STATIC_URL = 'static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 # Default primary key field type
