@@ -7,7 +7,6 @@
 
         // React
         "**/node_modules": true,
-        "*/.gitignore":true,
         "*/package-lock.json":true
 
     }
