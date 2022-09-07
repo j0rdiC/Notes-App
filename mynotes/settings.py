@@ -62,7 +62,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'web/public')
+            os.path.join(BASE_DIR, 'web-production-1550.up.railway.app/public')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
