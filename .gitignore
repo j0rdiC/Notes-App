@@ -1,0 +1,5 @@
+frontend/node_modules/
+**/*.py
+.vscode
+Pipfile
+Pipfile.lock
