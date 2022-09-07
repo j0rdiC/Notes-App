@@ -62,7 +62,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'public')
+            os.path.join(BASE_DIR, 'static')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -126,7 +126,7 @@ USE_TZ = True
 
 STATIC_URL = 'public/'
 STATIC_ROOT = os.path.join(
-    BASE_DIR, 'web-production-1550.up.railway.app/public')
+    BASE_DIR, 'public')
 
 
 # Default primary key field type
